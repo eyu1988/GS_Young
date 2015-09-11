@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hZt-BZ-2k6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2vZ-UX-gjm">
+            <objects>
+                <viewController id="hZt-BZ-2k6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yKG-2U-8gV"/>
+                        <viewControllerLayoutGuide type="bottom" id="V3d-6g-CtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9BX-fM-tUu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C47-OQ-ZJG">
+                                <rect key="frame" x="0.0" y="141" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NSw-Yq-1y6">
+                                <rect key="frame" x="0.0" y="209" width="110" height="22"/>
+                                <connections>
+                                    <segue destination="RLP-hc-bH8" kind="embed" id="G5W-3N-eXn"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GxR-ch-PPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-885" y="-229"/>
+        </scene>
+        <!--Numerical Value Conver ImageCVC-->
+        <scene sceneID="y6u-5Q-sDX">
+            <objects>
+                <collectionViewController id="RLP-hc-bH8" customClass="NumericalValueConverImageCVC" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="db6-mq-pcc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tm2-6y-AA4">
+                            <size key="itemSize" width="41" height="34"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ImageCoverCollectionViewCell" reuseIdentifier="ImageCoverCollectionViewCell" id="f1F-al-lqG" customClass="ImageCoverCollectionViewCell">
+                                <rect key="frame" x="79" y="0.0" width="162" height="139"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="star_none.png" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-H7-e9O">
+                                            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                        </imageView>
+                                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_full.png" translatesAutoresizingMaskIntoConstraints="NO" id="obW-6M-1WA">
+                                            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="obW-6M-1WA" firstAttribute="leading" secondItem="f1F-al-lqG" secondAttribute="leading" id="8e3-jN-gcs"/>
+                                    <constraint firstItem="V4U-H7-e9O" firstAttribute="top" secondItem="obW-6M-1WA" secondAttribute="top" id="8kX-I1-W28"/>
+                                    <constraint firstAttribute="centerX" secondItem="obW-6M-1WA" secondAttribute="centerX" id="Mii-w9-W5N"/>
+                                    <constraint firstItem="obW-6M-1WA" firstAttribute="leading" secondItem="V4U-H7-e9O" secondAttribute="leading" id="UuR-Wg-Dxx"/>
+                                    <constraint firstAttribute="centerY" secondItem="obW-6M-1WA" secondAttribute="centerY" id="bha-an-spb"/>
+                                    <constraint firstAttribute="centerY" secondItem="V4U-H7-e9O" secondAttribute="centerY" id="jK5-Va-gK7"/>
+                                    <constraint firstAttribute="centerX" secondItem="V4U-H7-e9O" secondAttribute="centerX" constant="-2" id="xzU-Xy-OHx"/>
+                                    <constraint firstItem="V4U-H7-e9O" firstAttribute="top" secondItem="f1F-al-lqG" secondAttribute="top" id="yOz-Oa-7zE"/>
+                                </constraints>
+                                <size key="customSize" width="22" height="22"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jK5-Va-gK7"/>
+                                        <exclude reference="xzU-Xy-OHx"/>
+                                        <exclude reference="Mii-w9-W5N"/>
+                                        <exclude reference="bha-an-spb"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="bottomImageView" destination="V4U-H7-e9O" id="PQQ-Rv-GeD"/>
+                                    <outlet property="topImageView" destination="obW-6M-1WA" id="ejU-UU-eid"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCollectionViewCell" id="yaG-HQ-oGg" customClass="ImageCollectionViewCell">
+                                <rect key="frame" x="79" y="0.0" width="162" height="139"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="star_none.png" translatesAutoresizingMaskIntoConstraints="NO" id="liN-oj-r6i">
+                                            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="liN-oj-r6i" firstAttribute="top" secondItem="yaG-HQ-oGg" secondAttribute="top" id="6M9-dv-ONs"/>
+                                    <constraint firstAttribute="centerX" secondItem="liN-oj-r6i" secondAttribute="centerX" constant="-2" id="SDH-ti-J8a"/>
+                                    <constraint firstItem="liN-oj-r6i" firstAttribute="leading" secondItem="yaG-HQ-oGg" secondAttribute="leading" id="TDy-Hx-pG1"/>
+                                    <constraint firstAttribute="centerY" secondItem="liN-oj-r6i" secondAttribute="centerY" id="k9I-r8-sXf"/>
+                                </constraints>
+                                <size key="customSize" width="22" height="22"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SDH-ti-J8a"/>
+                                        <exclude reference="k9I-r8-sXf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="imageView" destination="liN-oj-r6i" id="tid-54-ywz"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="RLP-hc-bH8" id="wYi-dm-YmK"/>
+                            <outlet property="delegate" destination="RLP-hc-bH8" id="U4m-4J-vB9"/>
+                        </connections>
+                    </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nx-nu-K6Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197" y="-229"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star_full.png" width="22" height="22"/>
+        <image name="star_none.png" width="22" height="22"/>
+    </resources>
+</document>

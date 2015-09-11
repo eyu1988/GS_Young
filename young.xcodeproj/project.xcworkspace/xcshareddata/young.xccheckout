@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>404A6D98-E76F-4783-9E56-1165FE22B04F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0072810f-3a26-4d4f-95ad-5ed03eaf4f67++8045</key>
+		<string>http://www.gytaobao.cn:9011/svn/youth/trunk/qch_ios/young</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>young.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0072810f-3a26-4d4f-95ad-5ed03eaf4f67++8045</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>0072810f-3a26-4d4f-95ad-5ed03eaf4f67++8045</key>
+		<string>http://www.gytaobao.cn:9011/svn/youth</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://www.gytaobao.cn:9011/svn/youth/trunk/qch_ios/young/young.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0072810f-3a26-4d4f-95ad-5ed03eaf4f67++8045</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0072810f-3a26-4d4f-95ad-5ed03eaf4f67++8045</string>
+			<key>IDESourceControlWCCName</key>
+			<string>young</string>
+		</dict>
+	</array>
+</dict>
+</plist>

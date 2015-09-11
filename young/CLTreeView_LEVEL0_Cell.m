@@ -1,0 +1,36 @@
+
+
+#import "CLTreeView_LEVEL0_Cell.h"
+
+@implementation CLTreeView_LEVEL0_Cell
+
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        // Initialization code
+    }
+    return self;
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
+    [super setSelected:selected animated:animated];
+    
+    // Configure the view for the selected state
+}
+
+- (void)drawRect:(CGRect)rect
+{
+//    int addX = _node.nodeLevel*25; //根据节点所在的层次计算平移距离
+//    CGRect imgFrame = _imgView.frame;
+//    imgFrame.origin.x = 14 + addX;
+//    _imgView.frame = imgFrame;
+//    
+//    CGRect nameFrame = _name.frame;
+//    nameFrame.origin.x = 36 + addX;
+//    _name.frame = nameFrame;
+}
+
+
+@end

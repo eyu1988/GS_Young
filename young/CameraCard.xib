@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AVCamViewController">
+            <connections>
+                <outlet property="cancelButton" destination="Se5-0s-o2L" id="JgY-t0-mWy"/>
+                <outlet property="previewView" destination="9ft-7Q-5Y1" id="F6T-tf-HBO"/>
+                <outlet property="stillButton" destination="TdS-yP-edI" id="AZy-eJ-lMw"/>
+                <outlet property="view" destination="jMc-u3-vFN" id="PzG-Eb-s3p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jMc-u3-vFN">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ft-7Q-5Y1" customClass="AVCamPreviewView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdS-yP-edI">
+                            <rect key="frame" x="504" y="285" width="72" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="mP2-jM-ryj"/>
+                                <constraint firstAttribute="width" constant="72" id="rJJ-B6-mP8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="拍照">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="snapStillImage:" destination="-1" eventType="touchUpInside" id="spd-Un-UV5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Se5-0s-o2L">
+                            <rect key="frame" x="0.0" y="562" width="72" height="36"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="cZy-KE-UUG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="取消">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancel:" destination="-1" eventType="touchUpInside" id="QlY-ZB-RsQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="TdS-yP-edI" secondAttribute="trailing" constant="24" id="6PE-5T-sJL"/>
+                        <constraint firstAttribute="bottom" secondItem="Se5-0s-o2L" secondAttribute="bottom" constant="2" id="NpZ-QJ-7ed"/>
+                        <constraint firstItem="Se5-0s-o2L" firstAttribute="leading" secondItem="9ft-7Q-5Y1" secondAttribute="leading" id="cM8-4C-xkN"/>
+                        <constraint firstItem="TdS-yP-edI" firstAttribute="centerY" secondItem="9ft-7Q-5Y1" secondAttribute="centerY" id="k2q-4t-NQz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9ft-7Q-5Y1" secondAttribute="trailing" id="ZNl-6R-gRp"/>
+                <constraint firstAttribute="bottom" secondItem="9ft-7Q-5Y1" secondAttribute="bottom" id="f8o-UM-cK1"/>
+                <constraint firstItem="9ft-7Q-5Y1" firstAttribute="leading" secondItem="jMc-u3-vFN" secondAttribute="leading" id="nqs-7V-lGr"/>
+                <constraint firstItem="9ft-7Q-5Y1" firstAttribute="top" secondItem="jMc-u3-vFN" secondAttribute="top" id="uAL-nJ-rOh"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+</document>
